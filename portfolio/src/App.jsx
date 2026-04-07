@@ -1,14 +1,14 @@
-
-
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
+import Projects from "./Components/Projects";
 
 const App = () => {
   return (
-    <div>
+    <div className="scroll-smooth ">
       <Header />
-      <main>
+      <main >
         <Hero />
+        <Projects />
       </main>
     </div>
   )
