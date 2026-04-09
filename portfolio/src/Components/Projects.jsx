@@ -41,7 +41,7 @@ const featuredProjects = [
             </div>
             <div className="grid grid-cols-1 grid-rows-auto gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {featuredProjects.map((project, index) => 
-                    <div key={index} className="flex flex-col border-2 rounded-4xl transition hover:-translate-y-2 md:max-w-md lg:max-w-lg justify-self-center overflow-hidden">
+                    <div key={index} className="flex flex-col border rounded-4xl transition hover:-translate-y-2 md:max-w-md lg:max-w-lg justify-self-center overflow-hidden">
                         <div className="flex-1">
                             <img src={weather} alt="Weather-App" className="w-full h-55 object-cover"/>
                         </div>
@@ -56,7 +56,7 @@ const featuredProjects = [
                                 </ul>
                             </div>
                             <div className="flex gap-2 md:gap-4 items-center">
-                                <a href={project.liveLink} target='blank' className="border-2 p-1 rounded-lg text-md">View Project</a>
+                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-md border bg-black text-white text-sm md:text-md">View Project</a>
                                 <a href={project.githubLink} target='blank' className='flex items-center text-md'> <FontAwesomeIcon icon={faGithub} className='text-2xl'/> </a>
                             </div>
                         </div>

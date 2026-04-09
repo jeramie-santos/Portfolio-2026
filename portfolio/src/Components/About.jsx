@@ -29,7 +29,7 @@ const skillsData = [
 ];
    
     return (
-        <section className="py-10 px-8 border-2 flex flex-col gap-8 md:flex-row scroll-mt-24" id='about'>
+        <section className="py-10 px-8 flex flex-col gap-8 md:flex-row scroll-mt-24" id='about'>
             <div className="flex flex-col gap-8 md:flex-1 lg:items-center lg:justify-center">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">About Me</h2>
                 <div className="flex flex-col gap-4">
@@ -48,7 +48,7 @@ const skillsData = [
                                 <p className='text-center text-xl md:text-2xl'>{skill.title}</p>
                                 <div className='flex gap-4 items-center justify-center flex-wrap'>
                                    {skill.items.map((item, j) => 
-                                     <div key={j} className='px-6 py-4 border-2 flex flex-col justify-center items-center gap-2 rounded-xl'>
+                                     <div key={j} className='px-6 py-4 border flex flex-col justify-center items-center gap-2 rounded-xl'>
                                         <FontAwesomeIcon icon={item.icon} className='text-3xl md:text-5xl'></FontAwesomeIcon>
                                         {item.name}
                                     </div>

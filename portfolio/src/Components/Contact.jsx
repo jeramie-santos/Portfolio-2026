@@ -15,9 +15,9 @@ const Contact = () => {
     }
     
     return (
-        <section className="py-10 px-8 border-2 border-green-500 flex flex-col items-center gap-8 scroll-mt-24" id="contact">
+        <section className="py-10 px-8 flex flex-col items-center gap-8 scroll-mt-24" id="contact">
             <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Contact Me</h2>
-            <div className="border-2 border-blue-500 px-4 py-6 w-80 rounded-lg md:w-md lg:w-200">
+            <div className="px-4 py-6 border border-gray-500 shadow-lg shadow-gray-300 w-80 rounded-lg md:w-md lg:w-200">
                 <form className="flex flex-col gap-4" onSubmit={emailSubmit}>
                     <div className="flex flex-col gap-4 lg:flex-row">
                         <div className="flex flex-col gap-2 lg:flex-1">

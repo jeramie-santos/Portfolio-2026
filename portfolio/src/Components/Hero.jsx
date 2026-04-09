@@ -9,8 +9,8 @@ const Hero = () => {
                 <h1 className="font-bold text-4xl lg:text-8xl">Sample</h1>
                 <p className="text-2xl font-bold lg:text-5xl">Front End Developer</p>
                 <a href='#contact' className="flex gap-4 items-center lg:gap-6">
-                    <button className="border-2 px-2 py-3 rounded-xl text-sm md:text-md lg:text-lg lg:px-3 lg:py-4">Contact Me</button>
-                    <button className="border-2 px-2 py-3 rounded-xl text-sm md:text-md lg:text-lg lg:px-3 lg:py-4">Download CV</button>
+                    <button className="border px-2 py-3 rounded-xl text-sm md:text-md lg:text-lg lg:px-3 lg:py-4 bg-black text-white">Contact Me</button>
+                    <button className="border px-2 py-3 rounded-xl text-sm md:text-md lg:text-lg lg:px-3 lg:py-4">Download CV</button>
                 </a>
                 <div>
                     <ul className='flex gap-2'>

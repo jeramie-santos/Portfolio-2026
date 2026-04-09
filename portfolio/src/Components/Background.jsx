@@ -1,6 +1,6 @@
 const Background = () => {
     return (
-        <section className="py-10 px-8 border-2 border-red-500 flex flex-col gap-8 items-center scroll-mt-24" id="work">
+        <section className="py-10 px-8 flex flex-col gap-8 items-center scroll-mt-24" id="work">
             <div className="flex-1 flex flex-col gap-8 w-80 md:w-md">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">Work Experience</h2>
                 <div className="flex gap-8">
