@@ -48,7 +48,7 @@ const skillsData = [
                                 <p className='text-center text-xl md:text-2xl'>{skill.title}</p>
                                 <div className='flex gap-4 items-center justify-center flex-wrap'>
                                    {skill.items.map((item, j) => 
-                                     <div key={j} className='px-6 py-4 border flex flex-col justify-center items-center gap-2 rounded-xl'>
+                                     <div key={j} className='px-6 py-4 border flex flex-col justify-center items-center gap-2 rounded-xl transition hover:-translate-y-2 hover:shadow-2xl'>
                                         <FontAwesomeIcon icon={item.icon} className='text-3xl md:text-5xl'></FontAwesomeIcon>
                                         {item.name}
                                     </div>

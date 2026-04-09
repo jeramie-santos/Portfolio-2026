@@ -32,11 +32,11 @@ const Contact = () => {
                     <div>
                         <div className="flex flex-col gap-2">
                             <label htmlFor="message" className="text-lg">Your Message</label>
-                            <textarea id="message" name="message" className="border p-2 rounded-lg h-40" required></textarea>
+                            <textarea id="message" name="message" className="border p-2 rounded-lg h-80" required></textarea>
                         </div>
                     </div>
                     <div className="flex lg:justify-end">
-                        <button className="bg-black text-white flex-1 py-4 rounded-lg lg:w-30 lg:flex-none" type="submit">Send</button>
+                        <button className="bg-black text-white flex-1 py-4 rounded-lg lg:w-30 lg:flex-none hover:cursor-pointer hover:bg-gray-700" type="submit">Send</button>
                     </div>
                 </form>
             </div>

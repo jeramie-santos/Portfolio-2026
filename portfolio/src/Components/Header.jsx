@@ -20,11 +20,11 @@ const Header = () => {
                 </div>
                 <div className="hidden lg:block">
                     <ul className='flex gap-6'>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work Experience</a></li>
-                        <li><a href="#work">Education</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#project" className='hover:underline hover:underline-offset-8'>Projects</a></li>
+                        <li><a href="#about" className='hover:underline hover:underline-offset-8'>About</a></li>
+                        <li><a href="#work" className='hover:underline hover:underline-offset-8'>Work Experience</a></li>
+                        <li><a href="#work" className='hover:underline hover:underline-offset-8'>Education</a></li>
+                        <li><a href="#contact" className='hover:underline hover:underline-offset-8'>Contact</a></li>
                     </ul>
                 </div>
                 <div className="block lg:hidden">
