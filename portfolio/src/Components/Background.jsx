@@ -1,7 +1,7 @@
 const Background = () => {
     return (
         <div className="py-10 px-8 border-2 border-red-500 flex flex-col gap-8 items-center">
-            <div className="flex-1 flex flex-col gap-8 w-sm md:w-md">
+            <div className="flex-1 flex flex-col gap-8 w-80 md:w-md">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">Work Experience</h2>
                 <div className="flex gap-8">
                     <div className="flex flex-col justify-between items-center">
@@ -17,7 +17,7 @@ const Background = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 flex flex-col gap-8 w-sm md:w-md">
+            <div className="flex-1 flex flex-col gap-8 w-80 md:w-md">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">Education</h2>
                 <div className="flex gap-8">
                     <div className="flex flex-col justify-between items-center">
