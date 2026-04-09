@@ -34,7 +34,7 @@ const featuredProjects = [
 ];
 
     return (
-        <section className="py-10 px-8 flex flex-col gap-8 lg:py-20" id='project'>
+        <section className="py-10 px-8 flex flex-col gap-8 lg:py-20 scroll-mt-24" id='project'>
             <div className="flex flex-col items-center gap-4">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Featured Projects</h2>
                 <p className='text-lg md:text-2xl'>Selection of my recent work and personal projects.</p>

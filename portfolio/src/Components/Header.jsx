@@ -29,7 +29,7 @@ const Header = () => {
                 </div>
                 <div className="block lg:hidden">
                     <FontAwesomeIcon icon={faBars} 
-                        className='text-3xl hover:cursor-pointer'
+                        className='text-3xl'
                         onClick={() => setIsOpen(true)}
                         />
                 </div>

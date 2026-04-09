@@ -29,9 +29,9 @@ const skillsData = [
 ];
    
     return (
-        <section className="py-10 px-8 border-2 flex flex-col gap-8 md:flex-row" id='about'>
+        <section className="py-10 px-8 border-2 flex flex-col gap-8 md:flex-row scroll-mt-24" id='about'>
             <div className="flex flex-col gap-8 md:flex-1 lg:items-center lg:justify-center">
-                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">About me</h2>
+                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">About Me</h2>
                 <div className="flex flex-col gap-4">
                     <p> I'm a web developer based in the Philippines. </p>
                     <p>I enjoy breaking down how things work and turning that understanding into clean, functional code. I'm a frontend-focused developer with full-stack experience, building responsive and user-friendly applications using React and Tailwind CSS, with a strong focus on performance and usability.</p>

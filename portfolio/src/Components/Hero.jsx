@@ -8,10 +8,10 @@ const Hero = () => {
                 <p className="text-2xl lg:text-4xl">Hi! I'm</p>
                 <h1 className="font-bold text-4xl lg:text-8xl">Sample</h1>
                 <p className="text-2xl font-bold lg:text-5xl">Front End Developer</p>
-                <div className="flex gap-4 items-center lg:gap-6">
+                <a href='#contact' className="flex gap-4 items-center lg:gap-6">
                     <button className="border-2 px-2 py-3 rounded-xl text-sm md:text-md lg:text-lg lg:px-3 lg:py-4">Contact Me</button>
                     <button className="border-2 px-2 py-3 rounded-xl text-sm md:text-md lg:text-lg lg:px-3 lg:py-4">Download CV</button>
-                </div>
+                </a>
                 <div>
                     <ul className='flex gap-2'>
                         <li><a href="https://www.linkedin.com/in/jeramie-paul-santos-8285a1292/" target='blank' className='text-3xl lg:text-4xl'><FontAwesomeIcon icon={faLinkedin}/></a></li>
