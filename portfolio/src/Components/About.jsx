@@ -29,7 +29,7 @@ const skillsData = [
 ];
    
     return (
-        <div className="py-10 px-8 border-2 flex flex-col gap-8 md:flex-row">
+        <section className="py-10 px-8 border-2 flex flex-col gap-8 md:flex-row" id='about'>
             <div className="flex flex-col gap-8 md:flex-1 lg:items-center lg:justify-center">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">About me</h2>
                 <div className="flex flex-col gap-4">
@@ -59,7 +59,7 @@ const skillsData = [
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
