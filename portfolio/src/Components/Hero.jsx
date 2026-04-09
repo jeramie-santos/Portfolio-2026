@@ -3,7 +3,7 @@ import { faLinkedin, faSquareGithub} from '@fortawesome/free-brands-svg-icons';
 
 const Hero = () => {
     return (
-        <div className="min-h-[80svh] flex flex-col-reverse md:flex-row">
+        <div className="min-h-[80svh] flex flex-col-reverse md:flex-row gap-6 md:gap-0">
             <div className="flex-1 px-8 flex flex-col justify-center gap-3 lg:gap-4 lg:px-20">
                 <p className="text-2xl lg:text-4xl">Hi! I'm</p>
                 <h1 className="font-bold text-4xl lg:text-8xl">Jeramie Paul Santos</h1>
@@ -20,7 +20,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex-1 flex items-center justify-center">
-                <div className="bg-black h-70 w-70 lg:h-120 lg:w-120 rounded-full"> </div>
+                <div className="bg-black h-60 w-60 lg:h-120 lg:w-120 rounded-full"> </div>
             </div>
         </div>
     )

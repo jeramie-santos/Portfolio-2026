@@ -50,8 +50,8 @@ const featuredProjects = [
                             <p className='text-sm md:text-md'>{project.description}</p>
                             <div>
                                 <ul className="flex gap-4 flex-wrap">
-                                    {project.tech.map((item, index) => 
-                                        <li key={index} className="border border-sm p-2 rounded-full text-sm md:text-md">{item}</li>
+                                    {project.tech.map((item, j) => 
+                                        <li key={j} className="border border-sm p-2 rounded-full text-sm md:text-md">{item}</li>
                                     )}
                                 </ul>
                             </div>
