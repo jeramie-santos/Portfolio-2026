@@ -29,7 +29,7 @@ const skillsData = [
 ];
    
     return (
-        <section className="py-10 px-8 flex flex-col gap-8 md:flex-row scroll-mt-24" id='about'>
+        <section className="py-10 px-8 flex flex-col gap-8 md:flex-row lg:px-20 scroll-mt-24" id='about'>
             <div className="flex flex-col gap-8 md:flex-1 lg:items-center lg:justify-center">
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center">About Me</h2>
                 <div className="flex flex-col gap-4">

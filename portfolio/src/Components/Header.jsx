@@ -16,7 +16,7 @@ const Header = () => {
         <header className="py-10 px-5 lg:px-25 sticky top-0 bg-white/70 backdrop-blur-md z-50">
             <nav className="flex justify-between items-center">
                 <div>
-                    <p className="text-3xl font-bold tracking-widest">sample</p>
+                    <p className="text-3xl font-bold tracking-widest">JP</p>
                 </div>
                 <div className="hidden lg:block">
                     <ul className='flex gap-6'>
