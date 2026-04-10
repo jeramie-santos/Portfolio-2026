@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 import weather from "../assets/Weather-App.jpg"
@@ -49,9 +49,9 @@ const featuredProjects = [
                         <div className="flex-1">
                             <img src={weather} alt="Weather-App" className="w-full h-55 object-cover"/>
                         </div>
-                        <div className="flex-1 p-4 flex flex-col gap-2 md:gap-4 lg:p-6">
+                        <div className="flex-1 p-4 flex flex-col gap-4 lg:p-6">
                             <h3 className="text-xl font-bold md:text-2xl">{project.title}</h3>
-                            <p className='text-sm md:text-md'>{project.description}</p>
+                            <p className='text-sm md:text-md text-(--color-text-secondary)'>{project.description}</p>
                             <div>
                                 <ul className="flex gap-4 flex-wrap">
                                     {project.tech.map((item, j) => 
@@ -60,8 +60,8 @@ const featuredProjects = [
                                 </ul>
                             </div>
                             <div className="flex gap-2 md:gap-4 items-center">
-                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-md text-sm md:text-md text-(--color-bg) bg-(--color-primary-light) hover:cursor-pointer hover:bg-(--color-primary-dark)">View Project</a>
-                                <a href={project.githubLink} target='blank' className='flex items-center text-md'> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-dark)"/> </a>
+                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-md text-sm md:text-md text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light)">View Project</a> 
+                                <a href={project.githubLink} target='blank' className='flex items-center text-md'> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>
                             </div>
                         </div>
                     </div>

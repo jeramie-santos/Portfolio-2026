@@ -13,10 +13,10 @@ const Header = () => {
     }
 
     return (
-        <header className="py-10 px-5 lg:px-30 sticky top-0 backdrop-blur-md z-50">
+        <header className="py-10 px-8 lg:px-30 sticky top-0 backdrop-blur-md z-50">
             <nav className="flex justify-between items-center">
                 <div>
-                    <p className="text-3xl font-bold tracking-widest">JP</p>
+                    <p className="text-3xl font-bold tracking-wide">J<span className='text-(--color-primary-light)'>P</span><span className='text-(--color-primary)'>S</span></p>
                 </div>
                 <div className="hidden lg:block">
                     <ul className='flex gap-6'>
