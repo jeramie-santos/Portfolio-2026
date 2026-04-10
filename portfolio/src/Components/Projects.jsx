@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLaptopCode, faSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 
 import weather from "../assets/Weather-App.jpg"
@@ -60,7 +60,7 @@ const featuredProjects = [
                                 </ul>
                             </div>
                             <div className="flex gap-2 md:gap-4 items-center">
-                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-md text-sm md:text-md text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light)">View Project</a> 
+                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-md text-sm md:text-md text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1">View Project <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-md'/></a>
                                 <a href={project.githubLink} target='blank' className='flex items-center text-md'> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>
                             </div>
                         </div>
