@@ -13,29 +13,29 @@ const Header = () => {
     }
 
     return (
-        <header className="py-10 px-5 lg:px-25 sticky top-0 bg-white/70 backdrop-blur-md z-50">
+        <header className="py-10 px-5 lg:px-30 sticky top-0 backdrop-blur-md z-50">
             <nav className="flex justify-between items-center">
                 <div>
                     <p className="text-3xl font-bold tracking-widest">JP</p>
                 </div>
                 <div className="hidden lg:block">
                     <ul className='flex gap-6'>
-                        <li><a href="#project" className='hover:underline hover:underline-offset-8'>Projects</a></li>
-                        <li><a href="#about" className='hover:underline hover:underline-offset-8'>About</a></li>
-                        <li><a href="#work" className='hover:underline hover:underline-offset-8'>Work Experience</a></li>
-                        <li><a href="#work" className='hover:underline hover:underline-offset-8'>Education</a></li>
-                        <li><a href="#contact" className='hover:underline hover:underline-offset-8'>Contact</a></li>
+                        <li><a href="#project" className="hover:underline hover:underline-offset-8 hover:decoration-(--color-primary)">Projects</a></li>
+                        <li><a href="#about" className="hover:underline hover:underline-offset-8 hover:decoration-(--color-primary)">About</a></li>
+                        <li><a href="#work" className="hover:underline hover:underline-offset-8 hover:decoration-(--color-primary)">Work Experience</a></li>
+                        <li><a href="#work" className="hover:underline hover:underline-offset-8 hover:decoration-(--color-primary)">Education</a></li>
+                        <li><a href="#contact" className="hover:underline hover:underline-offset-8 hover:decoration-(--color-primary)">Contact</a></li>
                     </ul>
                 </div>
                 <div className="block lg:hidden">
                     <FontAwesomeIcon icon={faBars} 
-                        className='text-3xl'
+                        className="text-3xl"
                         onClick={() => setIsOpen(true)}
                         />
                 </div>
 
                 {isOpen && (
-                    <div className="fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center gap-8">
+                    <div className="fixed top-0 left-0 w-full h-screen bg-(--color-bg) flex flex-col items-center justify-center gap-8">
                         <ul className="flex flex-col gap-8 text-xl">
                             <li><a href="#project" onClick={() => setIsOpen(false)}>Projects</a></li>
                             <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
@@ -44,7 +44,7 @@ const Header = () => {
                             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
                         </ul>
                          <button onClick={() => setIsOpen(false)}
-                            className='text-3xl font-bold'>
+                            className="text-3xl font-bold">
                             ✕
                         </button>
                     </div>
