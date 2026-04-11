@@ -36,7 +36,7 @@ const skillsData = [
                   <FontAwesomeIcon icon={faFileLines} className='text-2xl md:text-3xl lg:text-4xl text-(--color-primary)'/>
                   <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">About Me</h2>
                 </div>
-                <div className="flex flex-col gap-4 lg:w-150 lg:self-center">
+                <div className="flex flex-col gap-4 lg:w-120 xl:w-150 lg:self-center">
                     <p>I enjoy breaking down how things work and turning that understanding into clean, functional code. I'm a frontend-focused developer with full-stack experience, building responsive and user-friendly applications using React and Tailwind CSS, with a strong focus on performance and usability.</p>
                     <p> Through building projects, I've explored multiple programming languages such as Java, C#, and Python, which have helped expand my skill set and strengthen my problem-solving abilities.</p>
                     <p> I'm always eager to learn, take on new challenges, and deepen my understanding of software development. </p>
