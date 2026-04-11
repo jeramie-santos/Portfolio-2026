@@ -35,7 +35,7 @@ const featuredProjects = [
 ];
 
     return (
-        <section className="py-15 px-8 flex flex-col gap-8 lg:py-20 scroll-mt-24 lg:px-30" id='project'>
+        <section className="py-15 px-8 flex flex-col gap-8 lg:py-20 lg:px-30 lg:gap-10 scroll-mt-24" id='project'>
             <div className="flex flex-col items-center gap-4">
                 <div className='flex items-center justify-center gap-4'>
                     <FontAwesomeIcon icon={faLaptopCode} className='text-2xl md:text-3xl lg:text-4xl text-(--color-primary)'/>
@@ -43,9 +43,9 @@ const featuredProjects = [
                 </div>
                 <p className='text-base md:text-lg text-(--color-text-secondary)'>Selection of my recent work and personal projects.</p>
             </div>
-            <div className="grid grid-cols-1 grid-rows-auto gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-10 justify-center grid-cols-[repeat(auto-fit,minmax(280px,320px))]">
                 {featuredProjects.map((project, index) => 
-                    <div key={index} className="bg-(--color-surface) flex flex-col rounded-3xl shadow-xl hover:shadow-2xl md:max-w-md lg:max-w-lg justify-self-center overflow-hidden">
+                    <div key={index} className="bg-(--color-surface) flex flex-col rounded-3xl shadow-xl hover:shadow-2xl justify-self-center overflow-hidden">
                         <div className="flex-1">
                             <img src={weather} alt="Weather-App" className="w-full h-55 object-cover"/>
                         </div>
