@@ -4,3 +4,5 @@ Creating Portfolio to showcase my skill with frontend. The project will use the 
 
 - React
 - Tailwind
+
+Live Preview: (https://portfolio-2026-two-eosin.vercel.app/)
