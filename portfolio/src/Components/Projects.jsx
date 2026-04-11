@@ -41,7 +41,7 @@ const featuredProjects = [
                     <FontAwesomeIcon icon={faLaptopCode} className='text-2xl md:text-3xl lg:text-4xl text-(--color-primary)'/>
                     <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Featured Projects</h2>
                 </div>
-                <p className='text-lg md:text-2xl'>Selection of my recent work and personal projects.</p>
+                <p className='text-base md:text-lg text-(--color-text-secondary)'>Selection of my recent work and personal projects.</p>
             </div>
             <div className="grid grid-cols-1 grid-rows-auto gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {featuredProjects.map((project, index) => 
@@ -51,17 +51,17 @@ const featuredProjects = [
                         </div>
                         <div className="flex-1 p-4 flex flex-col gap-4 lg:p-6">
                             <h3 className="text-xl font-bold md:text-2xl">{project.title}</h3>
-                            <p className='text-sm md:text-md text-(--color-text-secondary)'>{project.description}</p>
+                            <p className='text-sm md:text-sm text-(--color-text-secondary)'>{project.description}</p>
                             <div>
                                 <ul className="flex gap-4 flex-wrap">
                                     {project.tech.map((item, j) => 
-                                        <li key={j} className="border border-(--color-primary-dark) border-sm p-2 rounded-full text-sm md:text-md text-(--color-primary-light)">{item}</li>
+                                        <li key={j} className="border border-(--color-primary-dark) border-sm p-2 rounded-full text-sm md:text-sm text-(--color-primary-light)">{item}</li>
                                     )}
                                 </ul>
                             </div>
                             <div className="flex gap-2 md:gap-4 items-center">
-                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-md text-sm md:text-md text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1">View Project <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-md'/></a>
-                                <a href={project.githubLink} target='blank' className='flex items-center text-md'> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>
+                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-sm md:text-sm text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1">View Project <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-xs'/></a>
+                                <a href={project.githubLink} target='blank' className='flex items-center text-sm'> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>
                             </div>
                         </div>
                     </div>
