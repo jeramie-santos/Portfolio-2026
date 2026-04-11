@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBriefcase, faEnvelope, faFileLines, faGraduationCap, faHandPaper, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 
 const Header = () => {
@@ -37,11 +37,11 @@ const Header = () => {
                 {isOpen && (
                     <div className="fixed top-0 left-0 w-full h-screen bg-(--color-bg) flex flex-col items-center justify-center gap-8">
                         <ul className="flex flex-col gap-8 text-xl">
-                            <li><a href="#project" onClick={() => setIsOpen(false)}>Projects</a></li>
-                            <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-                            <li><a href="#work" onClick={() => setIsOpen(false)}>Work Experience</a></li>
-                            <li><a href="#work" onClick={() => setIsOpen(false)}>Education</a></li>
-                            <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+                            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faLaptopCode} className='text-(--color-primary)'/><a href="#project" onClick={() => setIsOpen(false)}>Projects</a></li>
+                            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faFileLines} className='text-(--color-primary)'/><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+                            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faBriefcase} className='text-(--color-primary)'/><a href="#work" onClick={() => setIsOpen(false)}>Work Experience</a></li>
+                            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faGraduationCap} className='text-(--color-primary)'/><a href="#work" onClick={() => setIsOpen(false)}>Education</a></li>
+                            <li className='flex gap-2 items-center'><FontAwesomeIcon icon={faEnvelope} className='text-(--color-primary)'/><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
                         </ul>
                          <button onClick={() => setIsOpen(false)}
                             className="text-3xl font-bold">
