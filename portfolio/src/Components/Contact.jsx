@@ -1,21 +1,29 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-    
-    const emailSubmit = (e) => {
+    const form = useRef();
+
+    const emailSend = (e) => {
         e.preventDefault();
 
-        const formData = new FormData(e.target);
-    
-        const data = {
-            fullName: formData.get("fullName"),
-            email: formData.get("emailAddress"),
-            message: formData.get("message")
-        }
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
-        console.log(data);
+        emailjs.sendForm(serviceID, templateID, form.current, {
+            publicKey
+        })
+        .then(() => {
+            alert("Message sent successfully!")
+            form.current.reset();
+        }),
+        (error) => {
+            console.log(error.text);
+        } 
     }
     
     return (
@@ -25,7 +33,7 @@ const Contact = () => {
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Contact Me</h2>
             </div>
             <div className="px-4 py-6 w-80 rounded-lg md:w-md lg:w-200">
-                <form className="flex flex-col gap-4" onSubmit={emailSubmit}>
+                <form className="flex flex-col gap-4" ref={form} onSubmit={emailSend}>
                     <div className="flex flex-col gap-4 lg:flex-row">
                         <div className="flex flex-col gap-2 lg:flex-1">
                             <label htmlFor="fullName" className="text-lg">Full Name</label>

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faBriefcase, faEnvelope, faFileLines, faGraduationCap, faHandPaper, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBriefcase, faEnvelope, faFileLines, faGraduationCap, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 
 const Header = () => {
