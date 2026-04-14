@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpRightFromSquare, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faGears, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 
 import weather from "../assets/Weather-App.jpg"
@@ -10,6 +10,7 @@ const Projects = () => {
 const featuredProjects = [
   {
     title: "Weather App",
+    projectStatus: "done",
     description: "Sleek modern responsive weather app. Uses openweathermap.org API for data fetching.",
     image: weather,
     tech: ["React", "Tailwind"],
@@ -18,20 +19,13 @@ const featuredProjects = [
   },
   {
     title: "Admin Dashboard",
-    description: "Sleek modern responsive weather app. Uses openweathermap.org API for data fetching",
-    image: weather,
-    tech: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://react-weather-nine-gray.vercel.app/",
-    githubLink: "https://github.com/jeramie-santos/React-Weather"
+    projectStatus: "work-in-progress",
+    description: "Dahboard to view analytics and data in a modern look",
+    image: "",
+    tech: ["React", "Tailwind"],
+    liveLink: "https://github.com/jeramie-santos/React-Admin-Dashboard",
+    githubLink: "https://github.com/jeramie-santos/React-Admin-Dashboard"
   },
-  {
-    title: "E-commerce",
-    description: "Sleek modern responsive weather app. Uses openweathermap.org API for data fetching",
-    image: weather,
-    tech: ["React", "Tailwind", "Springboot"],
-    liveLink: "https://react-weather-nine-gray.vercel.app/",
-    githubLink: "https://github.com/jeramie-santos/React-Weather"
-  }
 ];
 
     return (
@@ -47,21 +41,30 @@ const featuredProjects = [
                 {featuredProjects.map((project, index) => 
                     <div key={index} className="bg-(--color-surface) flex flex-col rounded-3xl shadow-xl hover:shadow-2xl justify-self-center overflow-hidden">
                         <div className="flex-1">
-                            <img src={weather} alt="Weather-App" className="w-full h-55 object-cover"/>
+                            {project.image == "" ? <div className="flex flex-col items-center justify-center w-full h-55"> <FontAwesomeIcon icon={faGears} className='text-6xl'/> </div>
+                            : <img src={project.image} alt={project.title} className="w-full h-55 object-cover"/> }
+                            
                         </div>
                         <div className="flex-1 p-4 flex flex-col gap-4 lg:p-6">
-                            <h3 className="text-xl font-bold md:text-2xl">{project.title}</h3>
-                            <p className='text-sm md:text-sm text-(--color-text-secondary)'>{project.description}</p>
-                            <div>
-                                <ul className="flex gap-4 flex-wrap">
-                                    {project.tech.map((item, j) => 
-                                        <li key={j} className="border border-(--color-primary-dark) border-sm p-2 rounded-full text-sm md:text-sm text-(--color-primary-light)">{item}</li>
-                                    )}
-                                </ul>
+                            <div className='flex-1 flex flex-col gap-4 justify-around'>
+                                <h3 className="text-xl font-bold md:text-2xl">{project.title}</h3>
+                                {project.projectStatus === "work-in-progress" && (
+                                <span className="w-fit text-xs font-semibold px-3 py-1 rounded-full bg-(--color-text-secondary) text-(--color-surface)">
+                                    In Progress
+                                </span>
+                                )}
+                                <p className='text-sm md:text-sm text-(--color-text-secondary)'>{project.description}</p>
+                                <div>
+                                    <ul className="flex gap-4 flex-wrap">
+                                        {project.tech.map((item, j) => 
+                                            <li key={j} className="border border-(--color-primary-dark) border-sm w-fit px-3 py-1 rounded-full text-sm md:text-sm text-(--color-primary-light)">{item}</li>
+                                        )}
+                                    </ul>
+                                </div>
                             </div>
                             <div className="flex gap-2 md:gap-4 items-center">
-                                <a href={project.liveLink} target='blank' className="py-2 px-4  rounded-lg text-sm md:text-sm text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1">View Project <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-xs'/></a>
-                                <a href={project.githubLink} target='blank' className='flex items-center text-sm'> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>
+                                <a href={project.liveLink} target='blank' className="py-2 px-4 rounded-lg text-sm md:text-sm text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1" rel="noopener noreferrer"> {project.projectStatus == "work-in-progress" ? "View Code" : "View Project"} <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-xs'/></a>
+                                {project.projectStatus == "work-in-progress" ? "" : <a href={project.githubLink} target='blank' className='flex items-center text-sm' rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>}
                             </div>
                         </div>
                     </div>
