@@ -14,7 +14,7 @@ const skillsData = [
     ]
   },
   {
-    title: "Front-End Stack",
+    title: "Front End Stack",
     items: [
       { name: "React", icon: faReact },
       { name: "Tailwind", icon: faTailwindCss }

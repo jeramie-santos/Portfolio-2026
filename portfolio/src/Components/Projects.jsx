@@ -4,6 +4,7 @@ import { faArrowUpRightFromSquare, faGears, faLaptopCode } from '@fortawesome/fr
 
 
 import weather from "../assets/Weather-App.jpg"
+import dashboard from "../assets/Admin-Dashboard.jpg"
 
 const Projects = () => {
 
@@ -19,11 +20,11 @@ const featuredProjects = [
   },
   {
     title: "Admin Dashboard",
-    projectStatus: "work-in-progress",
-    description: "Dahboard to view analytics and data in a modern look",
-    image: "",
+    projectStatus: "done",
+    description: "Sleek, responsive dashboard for tracking analytics, managing users, and monitoring real-time activity.",
+    image: dashboard,
     tech: ["React", "Tailwind"],
-    liveLink: "https://github.com/jeramie-santos/React-Admin-Dashboard",
+    liveLink: "https://admin-dashboard-gamma-gold.vercel.app/",
     githubLink: "https://github.com/jeramie-santos/React-Admin-Dashboard"
   },
 ];
