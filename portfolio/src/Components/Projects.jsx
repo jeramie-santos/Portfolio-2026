@@ -43,7 +43,7 @@ const featuredProjects = [
                     <div key={index} className="bg-(--color-surface) flex flex-col rounded-3xl shadow-xl hover:shadow-2xl justify-self-center overflow-hidden">
                         <div className="flex-1">
                             {project.image == "" ? <div className="flex flex-col items-center justify-center w-full h-55"> <FontAwesomeIcon icon={faGears} className='text-6xl'/> </div>
-                            : <img src={project.image} alt={project.title} className="w-full h-55 object-fill"/> }
+                            : <img src={project.image} alt={project.title} className="w-full h-55 object-cover"/> }
                             
                         </div>
                         <div className="flex-1 p-4 flex flex-col gap-4 lg:p-6">
@@ -64,7 +64,7 @@ const featuredProjects = [
                                 </div>
                             </div>
                             <div className="flex gap-2 md:gap-4 items-center">
-                                <a href={project.liveLink} target='blank' className="py-2 px-4 rounded-lg text-sm md:text-sm text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1" rel="noopener noreferrer"> {project.projectStatus == "work-in-progress" ? "View Code" : "View Project"} <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-xs'/></a>
+                                <a href={project.liveLink} target='blank' className="py-2 px-4 rounded-lg text-sm md:text-sm text-(--color-bg) bg-(--color-primary) hover:cursor-pointer hover:bg-(--color-primary-light) flex items-center gap-1" rel="noopener noreferrer" aria-label={`To view the project ${project.title} live`}> {project.projectStatus == "work-in-progress" ? "View Code" : "View Project"} <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-xs'/></a>
                                 {project.projectStatus == "work-in-progress" ? "" : <a href={project.githubLink} target='blank' className='flex items-center text-sm' rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub} className="text-2xl text-(--color-primary) hover:cursor-pointer hover:text-(--color-primary-light)"/> </a>}
                             </div>
                         </div>

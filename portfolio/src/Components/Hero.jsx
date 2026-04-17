@@ -15,13 +15,13 @@ const Hero = () => {
                 </div>
                 <div>
                     <ul className='flex gap-2'>
-                        <li><a href="https://www.linkedin.com/in/jeramie-paul-santos-8285a1292/" target='blank' className='text-3xl lg:text-4xl'><FontAwesomeIcon icon={faLinkedin} className='text-(--color-primary) hover:text-(--color-primary-light)'/></a></li>
-                        <li><a href="https://github.com/jeramie-santos" target='blank' className='text-3xl lg:text-4xl'><FontAwesomeIcon icon={faSquareGithub} className='text-(--color-primary) hover:text-(--color-primary-light)'/></a></li>
+                        <li><a href="https://www.linkedin.com/in/jeramie-paul-santos-8285a1292/" target='blank' className='text-3xl lg:text-4xl' aria-label='View my Linkedin Profile for more details'><FontAwesomeIcon icon={faLinkedin} className='text-(--color-primary) hover:text-(--color-primary-light)'/></a></li>
+                        <li><a href="https://github.com/jeramie-santos" target='blank' className='text-3xl lg:text-4xl' aria-label='View my Github Account for more projects'><FontAwesomeIcon icon={faSquareGithub} className='text-(--color-primary) hover:text-(--color-primary-light)'/></a></li>
                     </ul>
                 </div>
             </div>
             <div className="flex-1 flex items-center justify-center">
-                <img src={displayPicture} alt="Profile-Pic" className="h-60 w-60 md:h-80 md:w-80 lg:h-100 lg:w-100 xl:h-120 xl:w-120 rounded-full object-cover border-8"/>
+                <img src={displayPicture} alt="Profile-Pic" className="h-60 w-60 md:h-80 md:w-80 lg:h-100 lg:w-100 xl:h-120 xl:w-120 rounded-full object-cover border-8" fetchPriority="high"/>
             </div>
         </section>
     )
