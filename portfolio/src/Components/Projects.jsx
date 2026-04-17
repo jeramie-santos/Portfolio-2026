@@ -43,7 +43,7 @@ const featuredProjects = [
                     <div key={index} className="bg-(--color-surface) flex flex-col rounded-3xl shadow-xl hover:shadow-2xl justify-self-center overflow-hidden">
                         <div className="flex-1">
                             {project.image == "" ? <div className="flex flex-col items-center justify-center w-full h-55"> <FontAwesomeIcon icon={faGears} className='text-6xl'/> </div>
-                            : <img src={project.image} alt={project.title} className="w-full h-55 object-cover"/> }
+                            : <img src={project.image} alt={project.title} className="w-full h-55 object-fill"/> }
                             
                         </div>
                         <div className="flex-1 p-4 flex flex-col gap-4 lg:p-6">

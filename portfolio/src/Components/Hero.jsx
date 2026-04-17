@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareGithub} from '@fortawesome/free-brands-svg-icons';
-import displayPicture from "../assets/Display-Pic.jpg"
+import displayPicture from "../assets/Display-Pic.webp"
 
 const Hero = () => {
     return (
@@ -21,7 +21,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex-1 flex items-center justify-center">
-                <img src={displayPicture} className="h-60 w-60 md:h-80 md:w-80 lg:h-100 lg:w-100 xl:h-120 xl:w-120 rounded-full object-cover border-8"/>
+                <img src={displayPicture} alt="Profile-Pic" className="h-60 w-60 md:h-80 md:w-80 lg:h-100 lg:w-100 xl:h-120 xl:w-120 rounded-full object-cover border-8"/>
             </div>
         </section>
     )
