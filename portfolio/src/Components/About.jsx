@@ -1,28 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faFileLines } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact, faTailwindCss, faGitSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faTailwindCss, faGitSquare, faGithubSquare, faNodeJs, faJava } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
    
 const skillsData = [
   {
-    title: "Core",
-    items: [
+      items: [
       { name: "HTML", icon: faHtml5 },
       { name: "CSS", icon: faCss3Alt },
-      { name: "JavaScript", icon: faJs }
+      { name: "JavaScript", icon: faJs },
     ]
   },
   {
-    title: "Front End Stack",
     items: [
       { name: "React", icon: faReact },
-      { name: "Tailwind", icon: faTailwindCss }
+      { name: "Tailwind", icon: faTailwindCss },
+      { name: "Node", icon: faNodeJs },
     ]
   },
   {
-    title: "Version Control",
     items: [
+      { name: "Java", icon: faJava },
       { name: "Git", icon: faGitSquare },
       { name: "Github", icon: faGithubSquare }
     ]
@@ -48,10 +47,9 @@ const skillsData = [
                       <FontAwesomeIcon icon={faCode} className='text-2xl md:text-3xl lg:text-4xl text-(--color-primary)'/>
                       <h2 className='font-bold text-2xl md:text-3xl lg:text-4xl'>Tech Stack</h2>
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-6'>
                         {skillsData.map((skill, index) => 
-                            <div key={index} className='flex flex-col gap-4'>
-                                <p className='text-center text-xl md:text-2xl text-(--color-text-secondary)'>{skill.title}</p>
+                            <div key={index} className='flex flex-col gap-6'>
                                 <div className='flex gap-4 items-center justify-center flex-wrap'>
                                    {skill.items.map((item, j) => 
                                      <div key={j} className='bg-(--color-surface) p-6 flex flex-col justify-center items-center gap-2 rounded-xl transition hover:-translate-y-2 hover:shadow-2xl'>
