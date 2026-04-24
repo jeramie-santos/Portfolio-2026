@@ -27,6 +27,15 @@ const featuredProjects = [
     liveLink: "https://admin-dashboard-gamma-gold.vercel.app/",
     githubLink: "https://github.com/jeramie-santos/React-Admin-Dashboard"
   },
+  {
+    title: "Simple Chat",
+    projectStatus: "work-in-progress",
+    description: "Sleek, responsive dashboard for tracking analytics, managing users, and monitoring real-time activity.",
+    image: "",
+    tech: ["React", "Tailwind"],
+    liveLink: "https://github.com/jeramie-santos/react-simple-chat",
+    githubLink: ""
+  },
 ];
 
     return (
