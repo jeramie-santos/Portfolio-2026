@@ -30,9 +30,9 @@ const featuredProjects = [
   {
     title: "Simple Chat",
     projectStatus: "work-in-progress",
-    description: "Sleek, responsive dashboard for tracking analytics, managing users, and monitoring real-time activity.",
+    description: "A simple chatting system.",
     image: "",
-    tech: ["React", "Tailwind"],
+    tech: ["React", "Tailwind", "Express" ,"MongoDB"],
     liveLink: "https://github.com/jeramie-santos/react-simple-chat",
     githubLink: ""
   },
