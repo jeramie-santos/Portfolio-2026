@@ -32,7 +32,7 @@ const featuredProjects = [
     projectStatus: "work-in-progress",
     description: "A simple chatting system.",
     image: "",
-    tech: ["React", "Tailwind", "Express" ,"MongoDB"],
+    tech: ["React", "Tailwind", "Express", "Node.js" ,"MongoDB", ],
     liveLink: "https://github.com/jeramie-santos/react-simple-chat",
     githubLink: ""
   },
@@ -57,12 +57,14 @@ const featuredProjects = [
                         </div>
                         <div className="flex-1 p-4 flex flex-col gap-4 lg:p-6">
                             <div className='flex-1 flex flex-col gap-4 justify-around'>
-                                <h3 className="text-xl font-bold md:text-2xl">{project.title}</h3>
-                                {project.projectStatus === "work-in-progress" && (
-                                <span className="w-fit text-xs font-semibold px-3 py-1 rounded-full bg-(--color-text-secondary) text-(--color-surface)">
-                                    In Progress
-                                </span>
-                                )}
+                                <h3 className="text-xl font-bold md:text-2xl flex gap-2 items-center">{project.title}  
+                                    {project.projectStatus === "work-in-progress" && (
+                                        <span className="w-fit text-xs font-semibold px-3 py-1 rounded-full bg-(--color-text-secondary) text-(--color-surface)">
+                                        In Progress
+                                        </span>
+                                    )}
+                                </h3>
+                              
                                 <p className='text-sm md:text-sm text-(--color-text-secondary)'>{project.description}</p>
                                 <div>
                                     <ul className="flex gap-4 flex-wrap">
