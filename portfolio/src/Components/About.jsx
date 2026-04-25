@@ -38,7 +38,7 @@ const skillsData = [
                 <div className="flex flex-col gap-4 lg:w-120 xl:w-150 lg:self-center">
                     <p>I’m a developer who enjoys understanding how systems work and building applications from backend to frontend. I have experience working with Java, Spring Boot, Node.js, Express, and React to create full-stack applications that are functional, scalable, and user friendly.</p>
                     <p> Through building projects, I've explored multiple programming languages such as Java, C#, and Python, which have helped expand my skill set and strengthen my problem-solving abilities.</p>
-                    <p> I'm always eager to learn, take on new challenges, and deepen my understanding of software development. </p>
+                    <p> I'm always eager to learn, take on new challenges, and deepen my understanding of web development. </p>
                 </div>
             </div>
             <div className='md:flex-1'>
