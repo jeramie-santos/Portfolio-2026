@@ -47,9 +47,9 @@ const skillsData = [
                       <FontAwesomeIcon icon={faCode} className='text-2xl md:text-3xl lg:text-4xl text-(--color-primary)'/>
                       <h2 className='font-bold text-2xl md:text-3xl lg:text-4xl'>Tech Stack</h2>
                     </div>
-                    <div className='flex flex-col gap-6'>
+                    <div className='flex flex-col gap-4'>
                         {skillsData.map((skill, index) => 
-                            <div key={index} className='flex flex-col gap-6'>
+                            <div key={index} className='flex flex-col gap-4'>
                                 <div className='flex gap-4 items-center justify-center flex-wrap'>
                                    {skill.items.map((item, j) => 
                                      <div key={j} className='bg-(--color-surface) p-6 flex flex-col justify-center items-center gap-2 rounded-xl transition hover:-translate-y-2 hover:shadow-2xl'>

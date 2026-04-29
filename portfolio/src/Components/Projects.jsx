@@ -5,6 +5,7 @@ import { faArrowUpRightFromSquare, faGears, faLaptopCode } from '@fortawesome/fr
 
 import weather from "../assets/Weather-App.jpg"
 import dashboard from "../assets/Admin-Dashboard.jpg"
+import chatRoom from "../assets/Chat-Room.png"
 
 const Projects = () => {
 
@@ -28,13 +29,13 @@ const featuredProjects = [
     githubLink: "https://github.com/jeramie-santos/React-Admin-Dashboard"
   },
   {
-    title: "Simple Chat",
-    projectStatus: "work-in-progress",
-    description: "A simple chatting system.",
-    image: "",
+    title: "Chat Room",
+    projectStatus: "done",
+    description: "Realtime Chat Room.",
+    image: chatRoom,
     tech: ["React", "Tailwind", "Express", "Node.js" ,"MongoDB", ],
-    liveLink: "https://github.com/jeramie-santos/react-simple-chat",
-    githubLink: ""
+    liveLink: "https://fullstack-chat-two.vercel.app/",
+    githubLink: "https://github.com/jeramie-santos/react-simple-chat"
   },
 ];
 
