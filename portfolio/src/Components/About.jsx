@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faFileLines } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact, faTailwindCss, faGitSquare, faGithubSquare, faNodeJs, faJava } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faTailwindCss, faGitSquare, faGithubSquare, faNodeJs, faPostgresql } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
    
@@ -21,7 +21,7 @@ const skillsData = [
   },
   {
     items: [
-      { name: "Java", icon: faJava },
+      { name: "PostgreSQL", icon: faPostgresql },
       { name: "Git", icon: faGitSquare },
       { name: "Github", icon: faGithubSquare }
     ]

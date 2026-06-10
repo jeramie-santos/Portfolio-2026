@@ -4,29 +4,20 @@ import { faArrowUpRightFromSquare, faGears, faLaptopCode } from '@fortawesome/fr
 
 
 import weather from "../assets/Weather-App.jpg"
-import dashboard from "../assets/Admin-Dashboard.jpg"
+import market from "../assets/Byte-Market.jpg"
 import chatRoom from "../assets/Chat-Room.png"
 
 const Projects = () => {
 
 const featuredProjects = [
   {
-    title: "Weather App",
+    title: "ByteMarket",
     projectStatus: "done",
-    description: "Sleek modern responsive weather app. Uses openweathermap.org API for data fetching.",
-    image: weather,
-    tech: ["React", "Tailwind"],
-    liveLink: "https://react-weather-nine-gray.vercel.app/",
-    githubLink: "https://github.com/jeramie-santos/React-Weather"
-  },
-  {
-    title: "Admin Dashboard",
-    projectStatus: "done",
-    description: "Sleek, responsive dashboard for tracking analytics, managing users, and monitoring real-time activity.",
-    image: dashboard,
-    tech: ["React", "Tailwind"],
-    liveLink: "https://admin-dashboard-gamma-gold.vercel.app/",
-    githubLink: "https://github.com/jeramie-santos/React-Admin-Dashboard"
+    description: "An open market for selling computer parts.",
+    image: market,
+    tech: ["React", "Tailwind", "Express", "Node.js", "PostgreSQL"],
+    liveLink: "https://byte-market-ten.vercel.app/",
+    githubLink: "https://github.com/jeramie-santos/ByteMarket"
   },
   {
     title: "Chat Room",
@@ -36,6 +27,15 @@ const featuredProjects = [
     tech: ["React", "Tailwind", "Express", "Node.js" ,"MongoDB", ],
     liveLink: "https://fullstack-chat-two.vercel.app/",
     githubLink: "https://github.com/jeramie-santos/react-simple-chat"
+  },
+  {
+    title: "Weather App",
+    projectStatus: "done",
+    description: "Sleek modern responsive weather app. Uses openweathermap.org API for data fetching.",
+    image: weather,
+    tech: ["React", "Tailwind"],
+    liveLink: "https://react-weather-nine-gray.vercel.app/",
+    githubLink: "https://github.com/jeramie-santos/React-Weather"
   },
 ];
 
